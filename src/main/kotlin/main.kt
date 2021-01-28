@@ -11,6 +11,9 @@ fun main(args: Array<String>) {
 
     println("arrayExample()");
     arrayExample();
+
+    println("Collection Example")
+    collection();
 }
 
 fun dataTypes()
@@ -49,9 +52,24 @@ fun arrayExample()
     myAnotherInt[2] = 7;
 
 
+
     for (ele in myAnotherInt)
     {
         println("$ele")
     }
 
 }
+
+fun collection()
+{
+    val number: MutableList<Int> = mutableListOf(1, 2, 3, 4, 5);
+    val readOnlyNumbers : List<Int> = listOf(21, 22, 23, 24, 25);
+
+    println("Mutable list : $number");
+    println("Immutable List : $readOnlyNumbers");
+
+    number.add(6);
+    println("Mutable List after added : $number")
+
+}
+
