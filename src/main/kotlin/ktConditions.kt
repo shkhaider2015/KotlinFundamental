@@ -34,6 +34,9 @@ fun main(args: Array<String>)
     println("Switch Example")
     switchExample();
 
+    println("Loop Example")
+    loopExample()
+
 }
 
 fun switchExample()
@@ -57,5 +60,30 @@ fun switchExample()
 
 fun loopExample()
 {
+    val marks = arrayOf(44, 67, 84, 98, 65);
 
+    println("First Example")
+    for (ele in marks)
+    {
+        println("$ele");
+    }
+
+    println("Second Example");
+    for(index in marks.indices)
+    {
+        print("$index \t");
+    }
+
+    println("Iterate Through Range");
+    print("for (i in 1..5) print(i) = ")
+    for (i in 1..5) print(i)
+    println()
+
+    print("for (i in 5 downTo 1) print(i) = ")
+    for (i in 5 downTo 1) print(i)
+    println()
+
+    print("for (i in 1..5 step 2) print(i) = ")
+    for (i in 1..5 step 2) print(i)
+    println()
 }
